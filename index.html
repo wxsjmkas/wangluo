@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - [您的应用名称]</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .lang-section { display: none; }
+        .active { display: block; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch button { cursor: pointer; background: #f8f9fa; border: 1px solid #ddd; padding: 5px 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('zh')">中文</button>
+</div>
+
+<div id="lang-en" class="lang-section">
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: March 2026</p>
+    <p>Welcome to <strong>[Your App Name]</strong>. We prioritize your privacy and data security above all else.</p>
+
+    <h2>1. Core Service & VpnService</h2>
+    <p>To provide high-quality network security and encrypted transmission services, our application utilizes the Android <strong>VpnService</strong>. This is a core requirement to fulfill our primary functions:</p>
+    <ul>
+        <li><strong>Secure Tunneling:</strong> Creating an encrypted path for your data to prevent interception on public networks.</li>
+        <li><strong>Privacy Protection:</strong> Shielding your online identity and technical footprints from unauthorized tracking.</li>
+    </ul>
+
+    <h2>2. Data Collection Policy (No-Logs)</h2>
+    <p>We maintain a strict <strong>No-Logs Policy</strong>. We do not collect, store, or monitor your browsing activity, traffic destination, or data content. We do not require account registration, ensuring your usage remains anonymous.</p>
+
+    <h2>3. Data Security</h2>
+    <p>All data processed through our secure tunnel is protected by industry-standard encryption protocols. We do not share any user data with third-party advertising or analytics entities.</p>
+
+    <h2>4. Google Play Compliance</h2>
+    <p>In accordance with Google Play's VpnService policy, we declare that our service is used solely for security and privacy enhancement. We do NOT manipulate user traffic for advertising purposes or engage in any deceptive practices.</p>
+
+    <h2>5. Contact</h2>
+    <p>For any inquiries, please contact us at: <strong>[您的邮箱]</strong></p>
+</div>
+
+<div id="lang-zh" class="lang-section">
+    <h1>隐私政策</h1>
+    <p>最后更新日期：2026年3月</p>
+    <p>欢迎使用 <strong>[您的应用名称]</strong>。我们高度重视您的隐私和数据安全。</p>
+
+    <h2>1. 核心服务与 VpnService 说明</h2>
+    <p>为了提供高质量的网络安全和加密传输服务，本应用使用了 Android 系统的 <strong>VpnService</strong>。这是实现以下核心功能所必需的：</p>
+    <ul>
+        <li><strong>安全隧道：</strong> 为您的数据创建加密路径，防止在公共网络环境中被截获。</li>
+        <li><strong>隐私防护：</strong> 保护您的在线身份和技术特征，防止未经授权的追踪。</li>
+    </ul>
+
+    <h2>2. 数据收集政策（无日志）</h2>
+    <p>我们坚持严格的<strong>“无日志政策”</strong>。我们不会收集、存储或监控您的浏览活动、流量目的地或数据内容。应用无需注册即可使用，确保您的使用过程完全匿名。</p>
+
+    <h2>3. 数据安全</h2>
+    <p>通过安全隧道处理的所有数据均受到行业标准加密协议的保护。我们绝不会与任何第三方广告或分析机构共享用户数据。</p>
+
+    <h2>4. 合规声明</h2>
+    <p>根据 Google Play 的 VpnService 政策，我们声明该服务仅用于增强安全性和隐私保护。我们绝不会为了广告目的操纵用户流量，也不会参与任何误导性行为。</p>
+
+    <h2>5. 联系方式</h2>
+    <p>如有任何疑问，请联系我们：<strong>[您的邮箱]</strong></p>
+</div>
+
+<script>
+    function showLang(lang) {
+        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+        document.getElementById('lang-' + lang).classList.add('active');
+    }
+
+    // 自动检测语言
+    const userLang = navigator.language || navigator.userLanguage; 
+    if (userLang.startsWith('zh')) {
+        showLang('zh');
+    } else {
+        showLang('en');
+    }
+</script>
+
+</body>
+</html>
