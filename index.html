@@ -15,6 +15,7 @@
         .lang-switch button { cursor: pointer; background: #f8f9fa; border: 1px solid #ddd; padding: 6px 12px; border-radius: 4px; transition: 0.3s; }
         .lang-switch button:hover { background: #e9ecef; }
         .important-note { background: #fff3cd; padding: 15px; border-radius: 5px; border-left: 5px solid #ffecb5; margin: 15px 0; }
+        .delete-box { border: 1px solid #f5c6cb; background-color: #fdf2f2; padding: 15px; border-radius: 5px; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -27,65 +28,87 @@
 <div id="lang-en" class="lang-section">
     <h1>Privacy Policy</h1>
     <p>Last Updated: March 2026</p>
-    <p>Welcome to <strong>Selamat</strong>. Your privacy and data security are our top priorities.</p>
+    <p>Welcome to <strong>Selamat</strong>. We are committed to protecting your privacy and ensuring a secure user experience.</p>
 
-    <h2>1. Core Service & VpnService</h2>
-    <p>To provide high-quality network security and encrypted transmission services, our application utilizes the Android <strong>VpnService</strong>. This is a core requirement for:</p>
+    <h2>1. Information Collection</h2>
+    <p>To provide our services, we collect the following information when you create an account:</p>
     <ul>
-        <li><strong>Secure Tunneling:</strong> Creating an encrypted path for your data to prevent interception on public networks.</li>
-        <li><strong>Privacy Protection:</strong> Shielding your online identity from unauthorized tracking.</li>
+        <li><strong>Account Information:</strong> Email address, username, and password (encrypted) to manage your subscription and provide access across devices.</li>
+        <li><strong>Device Information:</strong> Basic hardware model and OS version to ensure app compatibility.</li>
     </ul>
 
-    <h2>2. Installed Package Information (QUERY_ALL_PACKAGES)</h2>
+    <h2>2. Core Service & VpnService</h2>
+    <p>Our application utilizes the Android <strong>VpnService</strong> to provide:</p>
+    <ul>
+        <li><strong>Secure Tunneling:</strong> Encrypting your data traffic on public networks.</li>
+        <li><strong>Privacy Protection:</strong> Masking your IP address and online identity.</li>
+    </ul>
+
+    <h2>3. Installed Package Information (Split Tunneling)</h2>
     <div class="important-note">
-        <strong>Specific Use Disclosure:</strong> 
-        Our app requests access to the list of installed applications purely for the <strong>"App-Specific Security Management"</strong> (Split Tunneling) feature.
+        <strong>Usage Disclosure:</strong> Our app accesses your installed package list solely for the <strong>"Split Tunneling"</strong> feature, allowing you to choose which apps bypass the VPN.
     </div>
-    <p>This information is used <strong>locally on your device</strong> to allow you to select which specific apps should use the secure encrypted tunnel and which should not. We <strong>DO NOT</strong> upload your installed app list to any external servers, nor do we share this data with third parties or use it for advertising purposes.</p>
+    <p>This data is processed <strong>locally</strong>. We do not upload your app list to our servers or share it with any third parties.</p>
 
-    <h2>3. Data Collection Policy (No-Logs)</h2>
-    <p>We maintain a strict <strong>No-Logs Policy</strong>. We do not monitor, record, or store your browsing activity, traffic destination, or data content. Application usage remains completely anonymous.</p>
+    <h2>4. No-Logs Policy</h2>
+    <p>We maintain a strict <strong>No-Logs Policy</strong> regarding your online activities. We do not track, record, or store your browsing history, traffic destinations, or data content. Your network behavior remains private.</p>
 
-    <h2>4. Data Security & Sharing</h2>
-    <p>All data processed through our secure tunnel is protected by industry-standard encryption. We do not sell, rent, or trade any user information with third-party entities.</p>
-
-    <h2>5. Google Play Compliance</h2>
-    <p>In accordance with Google Play's VpnService and Package Visibility policies, we declare that these permissions are used solely for the functionality described above. We do not engage in deceptive practices or unauthorized data harvesting.</p>
+    <h2>5. Account and Data Deletion</h2>
+    <p>We respect your right to control your data. You may request account deletion at any time:</p>
+    <div class="delete-box">
+        <strong>How to Delete:</strong> 
+        <ul>
+            <li><strong>In-App:</strong> Go to Settings > Account > Delete Account.</li>
+            <li><strong>Web/Email:</strong> Visit our <a href="https://yourdomain.com/delete-request">Data Deletion Portal</a> or email <strong>wangluo789@proton.me</strong>.</li>
+        </ul>
+        <p>Upon deletion, all personal data (email, account credentials) will be permanently removed from our active databases within 7 days.</p>
+    </div>
 
     <h2>6. Contact</h2>
-    <p>For any inquiries, please contact us at: <strong>wangluo789@proton.me</strong></p>
+    <p>For inquiries: <strong>wangluo789@proton.me</strong></p>
 </div>
 
 <div id="lang-zh" class="lang-section">
     <h1>隐私政策</h1>
     <p>最后更新日期：2026年3月</p>
-    <p>欢迎使用 <strong>Selamat</strong>。我们高度重视您的隐私和数据安全。</p>
+    <p>欢迎使用 <strong>Selamat</strong>。我们致力于保护您的个人隐私并提供安全的用户体验。</p>
 
-    <h2>1. 核心服务与 VpnService 说明</h2>
-    <p>为了提供高质量的网络安全和加密传输服务，本应用使用了 Android 系统的 <strong>VpnService</strong>。这是实现以下核心功能所必需的：</p>
+    <h2>1. 信息收集</h2>
+    <p>为了提供服务，当您创建账户时，我们会收集以下信息：</p>
     <ul>
-        <li><strong>安全隧道：</strong> 为您的数据创建加密路径，防止在公共网络环境中被截获。</li>
-        <li><strong>隐私防护：</strong> 保护您的在线身份和技术特征，防止未经授权的追踪。</li>
+        <li><strong>账户信息：</strong> 电子邮箱、用户名和密码（加密存储），用于管理您的订阅及实现多设备登录。</li>
+        <li><strong>设备信息：</strong> 基本硬件型号及系统版本，以确保应用兼容性。</li>
     </ul>
 
-    <h2>2. 已安装应用列表说明 (软件包查询权限)</h2>
+    <h2>2. 核心服务与 VpnService 说明</h2>
+    <p>本应用使用 Android 系统的 <strong>VpnService</strong> 来实现：</p>
+    <ul>
+        <li><strong>安全隧道：</strong> 在公共网络环境中加密您的数据传输。</li>
+        <li><strong>隐私防护：</strong> 隐藏您的 IP 地址和在线身份。</li>
+    </ul>
+
+    <h2>3. 已安装应用列表说明 (应用分流)</h2>
     <div class="important-note">
-        <strong>专项使用说明：</strong>
-        本应用申请访问已安装应用列表，仅用于 <strong>“应用分流管理” (Split Tunneling)</strong> 功能。
+        <strong>专项披露：</strong> 本应用访问已安装应用列表仅用于 <strong>“应用分流管理” (Split Tunneling)</strong> 功能，允许您自主选择哪些应用不经过 VPN 隧道。
     </div>
-    <p>该权限允许您自主选择哪些应用需要通过加密隧道传输，哪些应用直连网络。此类信息 <strong>仅在本地处理</strong>，我们 <strong>绝不会</strong> 将您的应用列表上传至任何服务器，也不会将其分享给第三方或用于广告追踪。</p>
+    <p>此类信息 <strong>仅在本地处理</strong>。我们不会将您的应用列表上传至服务器，也不会分享给任何第三方。</p>
 
-    <h2>3. 数据收集政策（无日志）</h2>
-    <p>我们坚持严格的<strong>“无日志政策”</strong>。我们不会收集、存储或监控您的浏览活动、流量目的地或数据内容。应用无需注册，确保使用过程完全匿名。</p>
+    <h2>4. 无日志政策</h2>
+    <p>我们对您的在线活动坚持严格的<strong>“无日志政策”</strong>。我们不会追踪、记录或存储您的浏览历史、流量目的地或数据内容。您的网络行为信息不会被记录。</p>
 
-    <h2>4. 数据安全与共享</h2>
-    <p>通过安全隧道处理的所有数据均受到行业标准加密协议的保护。我们绝不会与任何第三方广告或分析机构共享、买卖用户数据。</p>
-
-    <h2>5. Google Play 合规性声明</h2>
-    <p>根据 Google Play 的 VpnService 和软件包可见性政策，我们声明相关权限仅用于上述描述的安全功能。我们绝不参与任何误导性行为或未经授权的数据抓取。</p>
+    <h2>5. 账号与数据删除</h2>
+    <p>我们尊重您对数据的控制权。您可以随时申请删除账号及相关数据：</p>
+    <div class="delete-box">
+        <strong>删除途径：</strong>
+        <ul>
+            <li><strong>应用内：</strong> 前往 设置 > 账号 > 删除账号。</li>
+            <li><strong>网页/邮件：</strong> 访问我们的 <a href="https://yourdomain.com/delete-request">数据删除门户</a> 或发送邮件至 <strong>wangluo789@proton.me</strong>。</li>
+        </ul>
+        <p>账号删除后，所有个人数据（邮箱、账号凭据）将在 7 个工作日内从我们的活动数据库中永久移除。</p>
+    </div>
 
     <h2>6. 联系方式</h2>
-    <p>如有任何疑问，请联系我们：<strong>wangluo789@proton.me</strong></p>
+    <p>如有疑问，请联系：<strong>wangluo789@proton.me</strong></p>
 </div>
 
 <script>
