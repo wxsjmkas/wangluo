@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request - Selamat</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 700px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
+        .container { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        h1 { color: #2c3e50; font-size: 24px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #34495e; font-size: 18px; margin-top: 25px; }
+        p, li { font-size: 15px; color: #555; }
+        .method-box { background: #f0f7ff; border-left: 4px solid #3498db; padding: 15px; margin: 20px 0; }
+        .email-link { font-weight: bold; color: #3498db; text-decoration: none; }
+        .footer { text-align: center; margin-top: 30px; font-size: 12px; color: #999; }
+        .btn-back { display: inline-block; margin-bottom: 20px; font-size: 14px; color: #666; text-decoration: none; }
+        .lang-toggle { text-align: right; margin-bottom: 10px; }
+        .lang-toggle button { cursor: pointer; background: none; border: 1px solid #ddd; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<div class="lang-toggle">
+    <button onclick="toggleLang()">English / 中文</button>
+</div>
+
+<div class="container">
+    <div id="en-content">
+        <h1>Data Deletion Request</h1>
+        <p>If you wish to delete your data or account associated with the <strong>Selamat</strong> application, please follow the steps below.</p>
+        
+        <h2>How to request deletion:</h2>
+        <div class="method-box">
+            <p>Please send an email to: <a href="mailto:wangluo789@proton.me" class="email-link">wangluo789@proton.me</a></p>
+            <p><strong>Subject:</strong> Data Deletion Request - Selamat</p>
+            <p><strong>Please include:</strong> Your Device ID or any relevant identifiers used within the app.</p>
+        </div>
+
+        <h2>What data will be deleted?</h2>
+        <ul>
+            <li>Personal support history and emails.</li>
+            <li>Feedback logs and technical identifiers associated with your device.</li>
+            <li>Any cached configuration data (if applicable).</li>
+        </ul>
+
+        <h2>Retention & Timeline</h2>
+        <p>Upon receiving your request, we will process the deletion within <strong>7 business days</strong>. Please note that some anonymous technical logs or billing records may be retained for the minimum period required by local laws for tax and audit purposes.</p>
+    </div>
+
+    <div id="zh-content" style="display:none;">
+        <h1>数据删除申请</h1>
+        <p>如果您希望删除与 <strong>Selamat</strong> 应用相关的账户或数据，请按照以下步骤操作。</p>
+        
+        <h2>申请方式：</h2>
+        <div class="method-box">
+            <p>请发送邮件至：<a href="mailto:wangluo789@proton.me" class="email-link">wangluo789@proton.me</a></p>
+            <p><strong>邮件主题：</strong> 数据删除申请 - Selamat</p>
+            <p><strong>请提供：</strong> 您的设备标识符（Device ID）或应用内使用的任何相关标识信息。</p>
+        </div>
+
+        <h2>哪些数据将被删除？</h2>
+        <ul>
+            <li>个人支持记录及往来邮件。</li>
+            <li>反馈日志及与您设备相关的技术标识符。</li>
+            <li>任何缓存的配置数据（如适用）。</li>
+        </ul>
+
+        <h2>处理时限与保留政策</h2>
+        <p>收到申请后，我们将在 <strong>7 个工作日</strong> 内完成删除。请注意，部分匿名技术日志或账单记录（如有）将按法律要求的最低期限保留，以备税务审计之需。</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2026 Selamat - Network Security & Privacy Protection
+</div>
+
+<script>
+    function toggleLang() {
+        const en = document.getElementById('en-content');
+        const zh = document.getElementById('zh-content');
+        if (en.style.display === 'none') {
+            en.style.display = 'block';
+            zh.style.display = 'none';
+        } else {
+            en.style.display = 'none';
+            zh.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
